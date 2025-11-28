@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: "Helvetica Neue", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #eef2f7 0%, #d9e2ec 100%);
+  color: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}

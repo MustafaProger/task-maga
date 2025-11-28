@@ -1,0 +1,92 @@
+:root {
+  --panel-bg: #ffffff;
+  --panel-border: #cfd4db;
+  --text-main: #111827;
+  --accent: #2c5282;
+  --accent-strong: #1b365d;
+  --muted: #6b7280;
+  --success: #065f46;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: var(--text-main);
+  letter-spacing: 0.02em;
+}
+
+.input-validation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 420px;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+  background: var(--panel-bg);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+}
+
+.input-validation label {
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
+.input-validation input {
+  padding: 0.65rem 0.75rem;
+  font-size: 1rem;
+  border: 2px solid var(--panel-border);
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-validation input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.15);
+}
+
+.input-validation button {
+  width: fit-content;
+  padding: 0.55rem 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.1s ease-in-out;
+}
+
+.input-validation button:hover {
+  color: rgb(255, 255, 255);
+  background-color: #616467;
+}
+
+.input-validation button:active {
+  transform: translateY(1px);
+}
+
+.error {
+  border: 3px solid rgb(255, 71, 71);
+}
+
+.error-output {
+  min-height: 1.25rem;
+  color: rgb(255, 71, 71);
+  font-weight: 600;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.result {
+  min-height: 1.25rem;
+  font-weight: 700;
+  color: var(--success);
+  letter-spacing: 0.01em;
+}
+
+.hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}

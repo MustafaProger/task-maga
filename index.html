@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Elements</title>
+  <link rel="stylesheet" href="./styles/default.css">
+  <link rel="stylesheet" href="./styles/app.css">
+  <script defer src="index.js" type="module"></script>
+  <script defer src="utils.js" type="module"></script>
+</head>
+<body>
+  <h1>l1-interactive-elements-v1</h1>
+  <form class="input-validation" novalidate>
+    <label for="equation">Введите выражение с двумя однозначными операндами:</label>
+    <input type="text" id="equation" maxlength="3" name="equation">
+    <button type="submit">Вычислить</button>
+    <p class="hint">Пример: 2+3, 9/3, 1-2. Пробелы допускаются и игнорируются.</p>
+    <p class="error-output" role="alert" aria-live="polite"></p>
+    <p class="result" aria-live="polite"></p>
+  </form>
+</body>
+</html>
